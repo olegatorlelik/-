@@ -20,6 +20,13 @@
   font-family: "Raleway", sans-serif;
 }
 
+.title__main {
+  margin-top: 107px;
+  font-size: 36px;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+}
+
 .text {
   margin-top: 35px;
   font-size: 14px;
@@ -40,41 +47,13 @@
   padding-bottom: 20px;
 }
 
-.content__one span {
+.wraper span {
   font-size: 20px;
   color: #333333;
   font-family: "Raleway", sans-serif;
 }
 
-.content__two span {
-  font-size: 20px;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
-}
-
-.content__tree span {
-  font-size: 20px;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
-}
-
-.content__one p {
-  font-size: 14px;
-  color: #86878b;
-  font-family: "Raleway", sans-serif;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.content__two p {
-  font-size: 14px;
-  color: #86878b;
-  font-family: "Raleway", sans-serif;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.content__tree p {
+.wraper p {
   font-size: 14px;
   color: #86878b;
   font-family: "Raleway", sans-serif;
@@ -94,31 +73,10 @@
   justify-content: center;
 }
 
-.content__one {
+.wraper {
   width: 30%;
   align-items: center;
-  margin-top: 94px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.content__two {
-  width: 30%;
-  align-items: center;
-  margin-top: 94px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.content__tree {
-  width: 30%;
-  align-items: center;
-  margin-top: 94px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 94px 20px 20px 20px;
 }
 
 .wraper__round__one {
@@ -154,6 +112,116 @@
   margin: 0 auto 30px;
 }
 
+.main__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin: 50px auto 0;
+}
+
+.line__main {
+  border: solid 1px #ff8b38;
+  width: 64px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.text_main {
+  font-size: 14px;
+  color: #86878b;
+  font-family: "Raleway", sans-serif;
+  margin: 50px auto 0;
+}
+
+.main__wraper__card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.card__main__card {
+  width: 26%;
+  margin: 50px auto;
+}
+
+.line__title__head {
+  background-color: black;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 0;
+}
+
+.line__head {
+  background-color: black;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+
+.line__footer {
+  border-bottom: 1px solid #f5f5f5;
+  background-color: white;
+  font-size: 14px;
+  color: #86878b;
+  font-family: "Raleway", sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.line__none__border__head {
+  background-color: black;
+  font-size: 14px;
+  font-style: italic;
+  color: #86878b;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 0;
+}
+
+.color__line__footer {
+  border-top: 3px solid orange;
+  border-bottom: 1px solid #f5f5f5;
+  background: white;
+  font-size: 14px;
+  color: #86878b;
+  font-family: "Raleway", sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.price {
+  font-size: 60px;
+}
+
+.colum__content {
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+}
+
+.colum__content:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  background: #25bcff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.line__color {
+  background-color: orange;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  padding: 8px 0;
+}
+
 .content__img {
   display: flex;
   justify-content: center;
@@ -163,7 +231,9 @@
   background-repeat: no-repeat;
   background-image: url(/img/imagefon.png);
   background-position: center;
-  margin: 50px auto 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.33) inset;
 }
 
 .title__in__img {
@@ -174,8 +244,8 @@
 }
 
 .line__two {
-  width: 6%;
-  border: 2px solid #ffffff;
+  width: 64px;
+  border: 1px solid #ffffff;
   margin: 0 auto 50px;
 }
 
@@ -188,7 +258,7 @@
 
 .use {
   width: 11%;
-  margin: 0px auto 20px;
+  margin: 0px auto 40px;
   padding: 10px 20px;
   background-color: transparent;
   border: 2px solid #ffffff;
